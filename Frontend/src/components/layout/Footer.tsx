@@ -1,5 +1,5 @@
 import footerLogo from '../../assets/FooterLogo.png';
-
+import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <footer className="bg-[#1C1C1C] text-white pt-16 pb-8 border-t border-gray-800">
@@ -44,10 +44,10 @@ export default function Footer() {
               <li><a href="#" className="text-[15px] leading-6 font-normal text-white hover:text-gray-300 transition-colors" style={{ fontFamily: 'Roboto, sans-serif' }}>Instagram</a></li>
               <li><a href="#" className="text-[15px] leading-6 font-normal text-white hover:text-gray-300 transition-colors" style={{ fontFamily: 'Roboto, sans-serif' }}>Twitter/X</a></li>
             </ul>
-            <a href="#" className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-[16px] leading-[26px] font-semibold rounded-md text-white bg-[#1a4474] hover:bg-[#123156] transition-colors w-full sm:w-auto" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-[16px] leading-[26px] font-semibold rounded-md text-white bg-[#1a4474] hover:bg-[#123156] transition-colors w-full sm:w-auto" style={{ fontFamily: 'Roboto, sans-serif' }}>
               Request Consultation
               <svg className="ml-2 -mr-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </a>
+            </Link>
           </div>
         </div>
 

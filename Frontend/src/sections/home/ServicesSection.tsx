@@ -1,7 +1,8 @@
-import SectionHeader from '../components/common/SectionHeader';
-import Card from '../components/common/Card';
-import Button from '../components/common/Button';
-import footerLogo from '../assets/FooterLogo.png';
+import SectionHeader from '../../components/common/SectionHeader';
+import Card from '../../components/common/Card';
+import { Link } from 'react-router-dom';
+import Button from '../../components/common/Button';
+import footerLogo from '../../assets/FooterLogo.png';
 
 export default function ServicesSection() {
   const services = [
@@ -71,10 +72,12 @@ export default function ServicesSection() {
                 Cybersecurity is no longer just a technical requirement — it is a critical business enabler.
               </p>
               
-              <Button size="md" className="w-full shadow-lg shadow-blue-600/30 text-white text-[14px] leading-[23px] font-semibold flex items-center justify-center gap-2" style={{ fontFamily: 'Roboto, sans-serif' }}>
-                Request Consultation
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </Button>
+              <Link to="/contact" className="w-full">
+                <Button size="md" className="w-full shadow-lg shadow-blue-600/30 text-white text-[14px] leading-[23px] font-semibold flex items-center justify-center gap-2" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                  Request Consultation
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                </Button>
+              </Link>
               </div>
             </Card>
           </div>

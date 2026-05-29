@@ -1,6 +1,6 @@
-
-import imageCopyPng from '../assets/image copy.png';
-import imagePng from '../assets/image.png';
+import { Link } from 'react-router-dom';
+import imageCopyPng from '../../assets/image copy.png';
+import imagePng from '../../assets/image.png';
 
 export default function HeroSection() {
   return (
@@ -25,14 +25,18 @@ export default function HeroSection() {
               Cyber Triad delivers risk-driven cybersecurity solutions that align business strategy, regulatory compliance, and advanced security practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-              <button className="bg-[#1a4474] hover:bg-[#123156] text-white px-8 py-4 rounded-lg font-semibold text-[16px] leading-[26px] transition-colors flex items-center shadow-md" style={{ fontFamily: 'Roboto, sans-serif' }}>
-                Request Consultation
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </button>
-              <button className="text-black hover:text-gray-700 px-4 py-4 font-semibold text-[16px] leading-[26px] transition-colors flex items-center" style={{ fontFamily: 'Roboto, sans-serif' }}>
-                Learn More
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </button>
+              <Link to="/contact">
+                <button className="bg-[#1a4474] hover:bg-[#123156] text-white px-8 py-4 rounded-lg font-semibold text-[16px] leading-[26px] transition-colors flex items-center shadow-md" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                  Request Consultation
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                </button>
+              </Link>
+              <Link to="/services">
+                <button className="text-black hover:text-gray-700 px-4 py-4 font-semibold text-[16px] leading-[26px] transition-colors flex items-center" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                  Learn More
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                </button>
+              </Link>
             </div>
           </div>
 
