@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  
+  /* CyberTriad brand colors */
+  --color-primary-500: #0a2540; /* Dark blue background */
+  --color-primary-600: #041221; /* Very dark blue for cards */
+  --color-accent: #1f6feb; /* Blue accent / buttons */
+  
+  /* Gradients */
+  --backgroundImage-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --backgroundImage-gradient-mesh: radial-gradient(circle at 10% 20%, rgb(4, 21, 57) 0%, rgb(18, 59, 143) 90%);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
